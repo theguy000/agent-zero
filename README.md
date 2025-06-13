@@ -107,6 +107,10 @@ Click to open a video to learn how to install Agent Zero:
 
 A detailed setup guide for Windows, macOS, and Linux with a video can be found in the Agent Zero Documentation at [this page](./docs/installation.md).
 
+### 🐳 Dockerized Setup (Recommended)
+
+The primary and recommended way to run Agent Zero is using Docker, as described below. This provides a consistent and managed environment.
+
 ### ⚡ Quick Start
 
 ```bash
@@ -117,6 +121,12 @@ docker run -p 50001:80 frdel/agent-zero-run
 
 # Visit http://localhost:50001 to start
 ```
+
+### 🏡 Local Development Setup (Alternative)
+
+For developers who prefer to run services directly on their host machine without Docker (e.g., for specific development or testing scenarios with the UI, CLI, and SearXNG), a local setup guide is available. This method requires manual installation of dependencies (Python, Poetry, etc.) and offers more direct control but may be less reproducible than the Docker setup.
+
+Please refer to the [Local Development Setup Guide (LOCAL_SETUP.md)](LOCAL_SETUP.md) for detailed instructions on setting up and running SearXNG, the Gradio UI, and the CLI locally.
 
 ## 🐳 Fully Dockerized, with Speech-to-Text and TTS
 
